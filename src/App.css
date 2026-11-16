@@ -1,0 +1,22 @@
+.page {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.box {
+  width: 100%;
+  max-width: 380px;
+}
+
+@media (max-width: 800px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}

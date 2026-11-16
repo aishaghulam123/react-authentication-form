@@ -1,0 +1,59 @@
+.field {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6c6a5e;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  font: inherit;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input::placeholder {
+  color: #b3ab99;
+}
+
+.field input:focus {
+  border-color: var(--clay);
+}
+
+.field-box {
+  position: relative;
+}
+
+.field-box input {
+  padding-right: 56px;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clay);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--clay-dark);
+}

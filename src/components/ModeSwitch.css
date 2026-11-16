@@ -1,0 +1,43 @@
+.switch {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px;
+  margin-bottom: 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.switch button {
+  position: relative;
+  z-index: 1;
+  padding: 11px 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.switch[data-mode='login'] button:first-of-type,
+.switch[data-mode='signup'] button:last-of-type {
+  color: var(--cream);
+}
+
+.pill {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  border-radius: 999px;
+  background: var(--ink);
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.switch[data-mode='signup'] .pill {
+  transform: translateX(100%);
+}
